@@ -1,0 +1,156 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-weight: 700;
+  color: #0f0101;
+}
+
+#change_username {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+#username {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  margin-right: 0.5rem;
+}
+
+#send_username {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+}
+
+
+#chatroom {
+  background-color: #f5f5f5;
+  border-radius: 0.75rem;
+  margin: 1rem auto;
+  max-width: 35rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+
+#feedback {
+  height: 4rem;
+  overflow-y: auto;
+}
+
+#input_zone {
+  display: flex;
+  margin-top: 1rem;
+  bottom: 0;
+  display: flex;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+#message {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+  border: none;
+  border-radius: 5rem;
+  outline: none;
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+
+#send_message {
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+}
+.message:nth-child(even) {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  color: rgb(252, 42, 42);
+}
+
+.message:nth-child(odd) {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  flex-wrap: nowrap;
+  flex-direction: column-reverse;
+  color: rgb(15, 1, 1);
+}
+
+.edit {
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+  width: 14%;
+}
+
+.delete {
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem;
+  background-color: #0088cc;
+  color: #fff;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  outline: none;
+  flex-shrink: 0;
+  width: 14%;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #chatroom {
+    border-radius: 0;
+    max-width: 100%;
+  }
+  
+  #feedback {
+    height: 12rem;
+  }
+  
+  #message {
+    margin-right: 0;
+  }
+  
+  #send_message {
+    margin-left: 0.5rem;
+  }
+}
